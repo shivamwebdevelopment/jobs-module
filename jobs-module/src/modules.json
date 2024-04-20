@@ -1,0 +1,134 @@
+[
+  {
+    "id": 1,
+    "title": "Multiple Branch Management",
+    "desc": "Handle multiple branches situated in different locations with single master login.",
+    "image": "https://edyug.com/media/9.jpg"
+  },
+  {
+    "id": 2,
+    "title": "User Management",
+    "desc": "Efficient way to manage different users (Teaching & Non-Teaching Staff, Students, Parents) creating multiple logins depending upon permission to access.",
+    "image": "https://edyug.com/media/usermg.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Admission Management",
+    "desc": "Centralise your admission online/offline from enquiry to enrolment. This helps to scale up your admissions.",
+    "image": "https://edyug.com/media/admission.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Students/Parents Profile",
+    "desc": "A detailed information about students and parents to ease the communication and involvement",
+    "image": "https://edyug.com/media/parentprofile.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Academics Management",
+    "desc": "It facilitates complete students’ learning journey with perfect classroom management, curriculum structure, scheduling and promoting",
+    "image": "https://edyug.com/media/academic.jpg"
+  },
+  {
+    "id": 6,
+    "title": "Examination Management",
+    "desc": "It helps to create and manage examinations including exam scheduling, hall ticket generation, attendance, marks distribution, download/print student wise report card, mobile updates on parent mobile and analytical reports.",
+    "image": "https://edyug.com/media/examination.jpg"
+  },
+  {
+    "id": 7,
+    "title": "Fee Management",
+    "desc": "Collect fees online – Integrated payment gateways to automatically receive payments online, delivery of fee receipts and update student payment profile",
+    "image": "https://edyug.com/media/feemanagement.jpg"
+  },
+  {
+    "id": 8,
+    "title": "Human Resource Management",
+    "desc": "One product for the entire employee life cycle. It is a combination of employee info, attendance, payroll management, salary slips, leave management, performance-based awards and appraisals.",
+    "image": "https://img.freepik.com/free-vector/recruiting-professionals-studying-candidate-profiles_1262-21404.jpg?w=1380&t=st=1704521391~exp=1704521991~hmac=1eb30cd4b6a1c979f717db1df5970f1abbbdeeb05090802080154691417a1a46"
+  },
+  {
+    "id": 9,
+    "title": "Accounting",
+    "desc": "No need for using third party complicated software. We offer you one accounting solution to manage all income and expenses.",
+    "image": "https://edyug.com/media/accounting.jpg"
+  },
+  {
+    "id": 10,
+    "title": "Library management",
+    "desc": "Automate the library to keep track of resources, collect and update complete book repository, keep track of books issued and received, send alert to inform due date to return the book.",
+    "image": "https://edyug.com/media/libarary.jpg"
+  },
+  {
+    "id": 11,
+    "title": "Hostel Management",
+    "desc": "Streamline all hostel processes including allotment and supervision. Auto generated reports which wardens can use to have all specific data in one page in the system.",
+    "image": "https://edyug.com/media/hostel.jpg"
+  },
+  {
+    "id": 12,
+    "title": "Transport management",
+    "desc": "Manage all your buses, create routes & stops and assign drivers. Parents can track the information through mobile application.",
+    "image": "https://edyug.com/media/transport.jpg"
+  },
+  {
+    "id": 13,
+    "title": "Certificate Management",
+    "desc": "Generate customizable ID Cards, Transfer Certificate, Character Certificate, Student Performa, Award Certificate and many more from our fully loaded ERP.",
+    "image": "https://edyug.com/media/certificate.jpg"
+  },
+  {
+    "id": 14,
+    "title": "Digital Marksheet",
+    "desc": "With the changing time, share the digital marksheets with parents in real time. Take print outs as per your need.",
+    "image": "https://edyug.com/media/marksheet.jpg"
+  },
+  {
+    "id": 15,
+    "title": "Digital e-learning",
+    "desc": "Teachers can connect with Students from their home, they can schedule online classes using Zoom/bigbluebutton etc",
+    "image": "https://edyug.com/media/digitalelarining.jpg"
+  },
+  {
+    "id": 16,
+    "title": "Homework/Assignment",
+    "desc": "Teachers can upload their subject Homework/Assignments, only to the classes they teach, and it gets shared with Students/Parents instantly on their mobile application.",
+    "image": "https://edyug.com/media/homework.jpg"
+  },
+  {
+    "id": 17,
+    "title": "Internal Mailbox",
+    "desc": "It is an ultimate communication tool integrated with the system which allows teachers, parents, students and administration to communicate with each other.",
+    "image": "https://edyug.com/media/mailbox.jpg"
+  },
+  {
+    "id": 18,
+    "title": "News and circulars",
+    "desc": "Any News or Circular can be shared to the Parents/ Students under this Module.",
+    "image": "https://edyug.com/media/news.jpg"
+  },
+  {
+    "id": 19,
+    "title": "Live Notifications",
+    "desc": "Now get instant notifications on your mobile application",
+    "image": "https://edyug.com/media/notification.jpg"
+  },
+  {
+    "id": 20,
+    "title": "Bulk SMS and Email",
+    "desc": "Complete solution for sending SMS and Email to students",
+    "image": "https://edyug.com/media/bulksms.jpg"
+  },
+  {
+    "id": 21,
+    "title": "Live Dashboard",
+    "desc": "Live dashboards allow quick analysis of data like fee collection, Income vs Expenses, attendance, student/staff strength, transport, hostel and many more",
+    "image": "https://edyug.com/media/dashboard.jpg"
+  },
+  {
+    "id": 22,
+    "title": "Analytical Reports",
+    "desc": "Now take data backed decisions by analysing real time data & identifying potential issues in operation of your institution. Get reports of student, teacher, exam, attendance, fee collection, fee due, income & expense, admission and many more reports.",
+    "image": "https://edyug.com/media/analityicalreport.jpg"
+  }
+]

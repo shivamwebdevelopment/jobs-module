@@ -1,0 +1,150 @@
+==========================================================================
++++++++ Only Reducer manage multiple state = useReducer Hook +++++++++++++
+==========================================================================
+
+import React, { useReducer } from "react";
+
+// Define initial state
+const initialState = {
+  showFullDescription: false,
+  showImage: false,
+};
+
+// Define Reducer function
+const reducer = (state, action) => {
+  switch (action.type) {
+    case "TOGGLE_IMAGE":
+      return {
+        ...state,
+        showImage: !state.showImage,
+      };
+    case "TOGGLE_DESCRIPTION":
+      return {
+        ...state,
+        showFullDescription: !state.showFullDescription,
+      };
+    default:
+      return state;
+  }
+};
+
+const Module = ({ data }) => {
+  //===NOTE (IMP)USE Function position=> down: [state, dispatch]; up: (reducer, initialState)
+  const [state, dispatch] = useReducer(reducer, initialState);
+
+  // Extract state variable from state object
+  const { showFullDescription, showImage } = state;
+
+  // Ternery Operator Logic set = Show content and Not Show content
+  const moduleDescription = showFullDescription
+    ? data.desc
+    : data.desc.slice(0, 90) + "...";
+  const moduleImage = showImage ? data.image : "";
+
+  // Dispatch actions to toggle state
+  const toggleImage = () => {
+    dispatch({ type: "TOGGLE_IMAGE" });
+  };
+  const toggleDescription = () => {
+    dispatch({ type: "TOGGLE_DESCRIPTION" });
+  };
+
+  return (
+    <>
+      <div className="border-2 p-6 rounded-md">
+        <div>
+          <img
+            style={{
+              height: "90px",
+              width: "90px",
+              objectFit: "cover",
+              borderRadius: "50%",
+              boxShadow: "1px 3px 10px rgba(0,0,0,0.175)",
+              textIndent: "111px",
+              cursor: "pointer",
+            }}
+            src={moduleImage}
+            alt=""
+          />
+          <button
+            onClick={toggleImage}
+            className="bg-[#56a79a] text-white mt-3 mb-5 px-[6px] py-[1px] shadow-md rounded-md text-[12px] font-bold"
+          >
+            {showImage ? "Hide Image" : "Show Image"}
+          </button>
+        </div>
+        <h3 className="text-2xl">{data.title}</h3>
+        <p>{moduleDescription}</p>
+        <button
+          onClick={toggleDescription}
+          className="bg-black text-white px-4 py-1 rounded-md mt-2"
+        >
+          {showFullDescription ? "less" : "more"}
+        </button>
+      </div>
+    </>
+  );
+};
+
+export default Module;
+
+
+
+==========================================================================
++++++++++++++++++ Multiple State using = useState Hook +++++++++++++++++++++++++++++++++++
+==========================================================================
+
+import React, { useState } from "react";
+
+const Module = ({ data }) => {
+  const [showFullDescription, setShowFullDescription] = useState(false);
+  const [showImage, setShowImage] = useState(false);
+
+  const moduleDescription = showFullDescription ? data.desc : "";
+
+  const moduleImage = showImage ? data.image : "";
+
+  function toggleImage() {
+    setShowImage((prevState) => !prevState);
+  }
+
+  function toggleDescription() {
+    setShowFullDescription((prevState) => !prevState);
+  }
+  return (
+    <>
+      <div className="border-2 p-6 rounded-md">
+        <div>
+          <img
+            style={{
+              height: "90px",
+              width: "90px",
+              objectFit: "cover",
+              borderRadius: "50%",
+              boxShadow: "1px 3px 10px rgba(0,0,0,0.175)",
+              textIndent: "111px",
+            }}
+            src={moduleImage}
+            alt=""
+          />
+          <button
+            onClick={() => toggleImage()}
+            className="bg-[#56a79a] text-white mt-3 mb-5 px-[6px] py-[1px] shadow-md rounded-md text-[12px] font-bold"
+          >
+            {showImage ? "Hide Image" : "Show Image"}
+          </button>
+        </div>
+        <h3 className="text-2xl">{data.title}</h3>
+        <p>{moduleDescription}</p>
+        <button
+          onClick={() => toggleDescription()}
+          className="bg-black text-white px-4 py-1 rounded-md mt-2"
+        >
+          {showFullDescription ? "less" : "more"}
+        </button>
+      </div>
+    </>
+  );
+};
+
+export default Module;
